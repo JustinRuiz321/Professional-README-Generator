@@ -62,7 +62,7 @@ const questions = () => {
 function init() {
     questions()
     .then((data) => {
-        data.projectLicense = data.projectLicense.toUpperCase();
+ //       data.projectLicense = data.projectLicense.toUpperCase();
         fs.writeFileSync('README.md', generateMarkdown(data))
     })
     .then(() => console.log('Completed README.md file'))
